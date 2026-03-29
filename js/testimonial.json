@@ -1,0 +1,27 @@
+[
+    {
+        "name" :"Arbrim Thaci",
+        "role" :"CEO",
+        "image" :"img/arbrim-thaci.webp",
+        "text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam voluptatem qui rem ab quas omnis cum iusto itaque ratione eaque corrupti accusantium, explicabo dolorum, corporis error ipsam fugiat ducimus!"
+    },
+      {
+        "name" :"Enes Shala",
+        "role" :"Lead FrontEnd",
+        "image" :"img/enes-shala.png",
+        "text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam voluptatem qui rem ab quas omnis cum iusto itaque ratione eaque corrupti accusantium, explicabo dolorum, corporis error ipsam fugiat ducimus!"
+    },
+      {
+        "name" :"Violeta Thaci",
+        "role" :"Lead Desinger",
+        "image" :"img/violeta-thaci.webp",
+        "text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam voluptatem qui rem ab quas omnis cum iusto itaque ratione eaque corrupti accusantium, explicabo dolorum, corporis error ipsam fugiat ducimus!"
+    },
+
+  {
+        "name" :"Filan Fisteku",
+        "role" :"Lead Desinger",
+        "image" :"img/user.png",
+        "text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam voluptatem qui rem ab quas omnis cum iusto itaque ratione eaque corrupti accusantium, explicabo dolorum, corporis error ipsam fugiat ducimus!"
+    }
+]

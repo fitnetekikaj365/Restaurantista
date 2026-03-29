@@ -1,0 +1,85 @@
+{
+    "categories": {
+        "Breakfast": [
+            {
+                "name": "Pancakes",
+                "price": 5.0,
+                "image": "img/pancakes.webp",
+                "rating": 4.6,
+                "preparationTime": "10-15 mins"
+            },
+            {
+                "name": "Omlette",
+                "price": 5.6,
+                "image": "img/omlette.webp",
+                "rating": 4.8,
+                "preparationTime": "10-15 mins"
+            }
+        ],
+        "Lunch": [
+            {
+                "name": "Margarita",
+                "price": 6.25,
+                "image": "img/pizza.webp",
+                "rating": 4.3,
+                "preparationTime": "10-12 mins"
+            },
+            {
+                "name": "Salad",
+                "price": 4.25,
+                "image": "img/salad.webp",
+                "rating": 4.6,
+                "preparationTime": "10-13 mins"
+            },
+            {
+             "name": "Burger",
+                "price": 7,
+                "image": "img/burger.png",
+                "rating": 4.8,
+                "preparationTime": "5-15 mins"
+            },
+             {
+             "name": "Cake",
+                "price": 4.25,
+                "image": "img/cake.webp",
+                "rating": 5.0,
+                "preparationTime": "13-15 mins"
+            }
+         ],
+         "Dinner":[
+            {
+                 
+             "name": "Steak",
+                "price": 12.25,
+                "image": "img/steak.webp",
+                "rating": 4.6,
+                "preparationTime": "10-15 mins"
+            },
+             {
+             "name": "Fish",
+                "price": 12.25,
+                "image": "img/fish.webp",
+                "rating": 4.6,
+                "preparationTime": "10-15 mins"
+            }
+         ],
+         "Dessert":[
+            {
+                 
+             "name": "Cake",
+                "price": 3.25,
+                "image": "img/cake.webp",
+                "rating": 4.6,
+                "preparationTime": "10-15 mins"
+            },
+
+             {
+             "name": "IceCream",
+                "price": 12.25,
+                "image": "img/icecream.png",
+                "rating": 4.6,
+                "preparationTime": "10-15 mins"
+            }
+     ]
+    }
+}

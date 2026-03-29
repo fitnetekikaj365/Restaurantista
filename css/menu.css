@@ -1,0 +1,295 @@
+body{
+    background-color: #f2f1f2;
+}
+.menu-layout{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+}
+.menu{
+    width: 70%;
+    flex-direction: column;
+    gap:30px;
+}
+.menu-categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.menu-category{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.5s all ease;
+}
+.menu-category.active {
+    background-color:var(--primary-color);
+    color:#fff;
+    transition: 0.5s all ease ;
+
+}
+.menu-category .menu-info {
+    margin-left: 10px;
+}
+.menu-category.active p {
+    color:#fff;
+}
+.menu-category img {
+    opacity: 0.3;
+    width:50px;
+    height: 50px;
+    transition: 0.5s all ease;
+}
+.menu-category:hover img {
+    opacity:1 ;
+}
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.menu-item {
+    background-color: #fff;
+    width: 300px;
+    height: 130px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    transition: 0.3s all ease;
+} 
+.menu-item:hover{
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
+}
+.menu-item-img {
+    max-width: 70px;
+    max-height: 70px;
+}
+.menu-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-item-header p {
+    display: flex;
+}
+.menu-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item-footer .menu-item-price {
+    font-size: 18px;
+    display: flex;
+    align-items:center;
+}
+.menu-item-footer .menu-item-price span {
+    color:#999;
+    font-weight:300;
+    margin-right:2;
+}
+.menu-item-footer .menu-item-button {
+    border:none;
+    background-color:var(--primary-color);
+    color:#fff;
+    border-radius:50px;
+    padding:5px 10px;
+    cursor: pointer;
+    transition: 0.5 all ease;
+}
+.menu-item-footer .menu-item-button:hover {
+    background-color: var(--primary-darker-color);
+}
+.invoice{
+    background-color: #fff;
+    width: 30%;
+    height: calc(100vh - 140px);
+    position: sticky;
+    top:120px ;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.invoice h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.invoice-items {
+    margin-bottom: 20px;
+    flex:1;
+    overflow-y: auto;
+}
+.invoice-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.invoice-item-img{
+    max-width: 70px;
+    max-height: 70px;
+    margin-right:15px;
+    border-radius: 50%;
+}
+.invoice-item-details {
+    flex-grow: 1;
+}
+.invoive-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.invoice-item-quantity {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.invoice-item-quantity .quantity-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.quantity-input {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.invoice-item-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+.payment-summary {
+    background-color:#f2f2f2;
+    padding:15px;
+    border-radius: 10px;
+}
+.payment-summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.summary-details,
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.summary-total{
+    border-top: 1px dashed #777;
+
+}
+.pay-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+
+}
+.pay-button:hover {
+    background-color: var(--primary-color);
+}
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.modal-content{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 540px;
+    padding: 40px;
+}
+.modal-content h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.payment-form {
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.form-group input {
+    border-radius: 5px;
+    border:1px solid #acacac;
+    padding: 10px;
+    font-size: 18px;
+}
+.payment-note {
+    margin-top: 15px;
+    color: #acacac;
+    font-size :14px;
+}
+
+.success-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.success-modal .modal-content{
+    padding: 44px 84px 33px;
+    width: fit-content;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.success-modal .modal-content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+}
+.checkmark {
+background-color:var(--primary-color) ;
+color: #fff;
+font-size:40px;
+width: 100px;
+display:flex;
+justify-content: center;
+align-items: center;
+border-radius:50%;
+animation-name: rotate;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
